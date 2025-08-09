@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Sami - متجر ملابس</title>
+    <title>Adam Sami - متجر الملابس</title>
     <style>
         body {
-            font-family: Tahoma, Arial, sans-serif;
+            font-family: Tahoma, sans-serif;
             background-color: #f7f7f7;
             margin: 0;
             padding: 0;
@@ -19,40 +19,41 @@
         }
         .products {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             padding: 20px;
         }
         .product {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
             text-align: center;
-            padding: 10px;
         }
         .product img {
             width: 100%;
             height: auto;
+            border-radius: 8px;
         }
         .price {
-            color: green;
+            color: #e74c3c;
             font-size: 18px;
             margin: 10px 0;
         }
-        button {
-            background: #34495e;
+        .buy-btn {
+            background-color: #27ae60;
             color: white;
-            border: none;
             padding: 10px 15px;
-            cursor: pointer;
+            border: none;
             border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
         }
-        button:hover {
-            background: #2c3e50;
+        .buy-btn:hover {
+            background-color: #219150;
         }
         footer {
-            background: #2c3e50;
+            background-color: #34495e;
             color: white;
             text-align: center;
             padding: 15px;
@@ -63,42 +64,35 @@
 <body>
 
 <header>
-    <h1>متجر Adam Sami</h1>
-    <p>أحدث صيحات الموضة - تيشيرتات أنيقة بأسعار رائعة</p>
+    <h1>🛍️ Adam Sami - متجر الملابس</h1>
+    <p>أفضل تشكيلة تيشيرتات بسعر مميز</p>
 </header>
 
-<section class="products">
+<div class="products">
     <div class="product">
-        <img src="IMG_5358.jpeg" alt="طقم أخضر">
-        <h3>طقم تيشيرت أخضر</h3>
-        <p class="price">1699 جنيه</p>
-        <a href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20التيشيرت"><button>اشتري الآن</button></a>
+        <img src="IMG_5358.jpeg" alt="تيشيرت 1">
+        <p class="price">السعر: 1699 جنيه</p>
+        <a class="buy-btn" href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20هذا%20التيشيرت">اطلب الآن</a>
     </div>
-
     <div class="product">
-        <img src="IMG_5357.jpeg" alt="طقم أسود كلاسيك">
-        <h3>طقم أسود كلاسيك</h3>
-        <p class="price">1699 جنيه</p>
-        <a href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20التيشيرت"><button>اشتري الآن</button></a>
+        <img src="IMG_5357.jpeg" alt="تيشيرت 2">
+        <p class="price">السعر: 1699 جنيه</p>
+        <a class="buy-btn" href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20هذا%20التيشيرت">اطلب الآن</a>
     </div>
-
     <div class="product">
-        <img src="IMG_5359.jpeg" alt="طقم رياضي">
-        <h3>طقم رياضي أسود</h3>
-        <p class="price">1699 جنيه</p>
-        <a href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20التيشيرت"><button>اشتري الآن</button></a>
+        <img src="IMG_5359.jpeg" alt="تيشيرت 3">
+        <p class="price">السعر: 1699 جنيه</p>
+        <a class="buy-btn" href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20هذا%20التيشيرت">اطلب الآن</a>
     </div>
-
     <div class="product">
-        <img src="IMG_5275.png" alt="طقم لانفين">
-        <h3>طقم لانفين باريس</h3>
-        <p class="price">1699 جنيه</p>
-        <a href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20التيشيرت"><button>اشتري الآن</button></a>
+        <img src="IMG_5275.png" alt="تيشيرت 4">
+        <p class="price">السعر: 1699 جنيه</p>
+        <a class="buy-btn" href="https://wa.me/201027418061?text=السلام%20عليكم،%20أريد%20طلب%20هذا%20التيشيرت">اطلب الآن</a>
     </div>
-</section>
+</div>
 
 <footer>
-    <p>📞 تواصل معنا على واتساب: <a href="https://wa.me/201027418061" style="color: yellow;">01027418061</a></p>
+    <p>📞 للتواصل: 01027418061 | 💬 واتساب مباشر</p>
 </footer>
 
 </body>
